@@ -6,16 +6,16 @@ const Home = () => {
   const [signupPopup, setSignUpPopUp] = useState(false);
   const loginInButtonHandler = () => {
     setLoginPopup(true);
+    setSignUpPopUp(false);
   };
   const signUpButtonHandler = () => {
     setSignUpPopUp(true);
+    setLoginPopup(false);
   };
-  const closeLoginModal=()=>{
-    setLoginPopup(false)
-  }
-  const closeSignUpModal=()=>{
+  const closeBoth = () => {
     setSignUpPopUp(false);
-  }
+    setLoginPopup(false);
+  };
   return (
     <div
       onClick={(e) => {
@@ -25,10 +25,10 @@ const Home = () => {
         }
       }}
     >
-      <button onClick={() => setLoginPopup(true)}>login</button>
-      <button onClick={() => setSignUpPopUp(true)}>sign up</button>
-      {signupPopup && <SignUp onClose={closeSignUpModal} />}
-      {loginPopup && <SignIn onClose={closeLoginModal} />}
+      <button onClick={loginInButtonHandler}>login</button>
+      <button onClick={signUpButtonHandler}>sign up</button>
+      {signupPopup && <SignUp onClose={closeBoth} />}
+      {loginPopup && <SignIn onClose={closeBoth} />}
     </div>
   );
 };
