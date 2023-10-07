@@ -13,6 +13,7 @@ const SignUp = (props) => {
   const handleSubmit=(e)=>{
     e.preventDefault();
     //send to backend PUT command
+    //reroute to feed
     console.log(JSON.stringify(formData));
     props.onClose();
   }
