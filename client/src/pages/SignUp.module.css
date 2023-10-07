@@ -11,15 +11,26 @@
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: rgba(0, 0, 0, 0.4);
 }
 .popup {
   border-radius: 5px;
   padding: 2rem;
-  background-color: white;
+  background-color: #456547;
   width: 20em;
+  margin: auto;
   display: flex;
-  flex-direction: row;
+}
+input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+.submit-button {
+  padding: 1rem;
+  background-color: #113315;
+  border:none;
+  color: white;
+  border-radius: 4px;
+  display: flex;
 }

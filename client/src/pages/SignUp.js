@@ -13,7 +13,6 @@ const SignUp = (props) => {
   const handleSubmit=(e)=>{
     e.preventDefault();
     //send to backend PUT command
-    //reroute to feed
     console.log(JSON.stringify(formData));
     props.onClose();
   }
@@ -23,6 +22,24 @@ const SignUp = (props) => {
       <div className={classes["popup"]}>
         <h1 className={classes["title-text"]}>Sign up</h1>
         <form className={classes["form"]} onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="First Name"
+            onChange={handleChange}
+            id="first"
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            onChange={handleChange}
+            id="last"
+          />
+          <input
+            type="text"
+            placeholder="Email Address"
+            onChange={handleChange}
+            id="email_address"
+          />
           <input
             type="text"
             placeholder="Enter Username"
@@ -35,7 +52,7 @@ const SignUp = (props) => {
             onChange={handleChange}
             id="password"
           />
-          <button type='submit'>Submit</button>
+          <button className={classes["submit-button"]} type='submit'>Create</button>
         </form>
       </div>
     </div>,
