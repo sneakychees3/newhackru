@@ -1,0 +1,23 @@
+.left-bar{
+  position:relative;
+  top:70px;
+  height:calc(100vh-70px);
+  overflow: scroll;
+}
+.container{
+  padding:20px;
+}
+.menu{
+  display:flex;
+  flex-direction: column;
+  gap:20px;
+}
+.menu-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.menu-item span{
+  font-size:12px;
+}

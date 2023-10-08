@@ -1,4 +1,6 @@
 .header-holder{
+  position:sticky;
+  top:0;
 }
 
 

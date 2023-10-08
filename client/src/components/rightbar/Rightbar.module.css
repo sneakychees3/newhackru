@@ -1,0 +1,7 @@
+.rightBar{
+  position:relative;
+  top:70px;
+  right:100px;
+  height:calc(100vh-70px);
+  overflow: scroll;
+}
