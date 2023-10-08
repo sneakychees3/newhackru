@@ -14,6 +14,7 @@ const SignIn = (props) => {
     e.preventDefault();
     //send to backend GET command and verify password
     //reroute to feed
+    
     console.log(JSON.stringify(formData));
     props.onClose();
   };

@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Profile from "./pages/Profile";
 import Home from "./pages/Home";
-import Header from "./components/Header";
+import Header from "./components/navbar/Header";
 import Feed from "./pages/Feed";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
