@@ -4,7 +4,7 @@ import {
   Route,
   RouterProvider,
   Outlet,
-  Navigate
+  Navigate,
 } from "react-router-dom";
 import Profile from "./pages/Profile";
 import Home from "./pages/Home";
@@ -28,7 +28,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-const currentUser=true;
+const currentUser = true;
 
 const Layout = () => {
   return (
@@ -42,7 +42,7 @@ const Layout = () => {
     </div>
   );
 };
-const ProtectedLayout = ({children}) => {
+const ProtectedLayout = ({ children }) => {
   if (!currentUser) {
     return <Navigate to="/login" />;
   }
