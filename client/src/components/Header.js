@@ -5,17 +5,17 @@ const Header = () => {
   return (
     <header>
       <div className={classes["header-holder"]}>
-        <Link to="/sign-in">
-          <h1>
-            <span>Half</span>
-            <span>Name</span>
-          </h1>
-        </Link>
-        <div>
-          <Link to="/sign-up">
-            <button>Sign Up</button>
+      <ul>
+        <li>
+          <Link to="/sign-in">
+            <div>
+              <span>Half</span>
+              <span>Name</span>
+            </div>
           </Link>
-        </div>
+        </li>
+        <li className={classes["about"]}><Link to="/profile">Profile</Link></li>
+      </ul>
       </div>
     </header>
   );

@@ -20,7 +20,6 @@ const SignUp = (props) => {
     <div className={classes["popup-holder"]} id="popup-holder">
       {console.log(props)}
       <div className={classes["popup"]}>
-        <h1 className={classes["title-text"]}>Sign up</h1>
         <form className={classes["form"]} onSubmit={handleSubmit}>
           <input
             type="text"
